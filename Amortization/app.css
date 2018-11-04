@@ -1,0 +1,30 @@
+body 
+{
+    background-image: url(./tic-tac-toe.svg);
+    background-color: #0B3C5D;   
+}
+button:hover 
+{
+    transform:scale(1.1);
+}
+label:hover
+{
+    transform: scale(1.1);
+}
+form
+{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4484CE;
+}
+#totals
+{
+    border-width: 10px;
+    margin-left: 225px;
+    margin-right: 225px;
+}
+
+

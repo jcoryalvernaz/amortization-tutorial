@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <meta charset="utf-8" />
+
+    <!--documentation for Bootstrap at https://getbootstrap.com/docs/4.0/getting-started/introduction/-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!--External style sheet-->
+    <link rel="stylesheet" type="text/css" href="../Amortization/app.css" />
+    
+    <!--Librairies required for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--External JS-->
+    <script type="text/javascript" src="../Amortization/app.js"></script>
+</head>
+<body id="body">
+    
+    <div class="container p-5">
+        <form id="loanData">
+            <div class="form-group">
+                <label for="principal">Loan Amount</label>
+                <input class="form-control" type="number" id="principal" placeholder="200000" />
+            </div>
+            <div class="form-group">
+                <label for="interest">Interest Rate</label>
+                <input class="form-control" type="number" id="interest" placeholder="5.0" />
+            </div>
+            <div class="form-group">
+                <label for="years">Loan Term (Years)</label>
+                <input class="form-control" type="number" id="years" placeholder="30" />
+            </div>   
+            <button class="btn btn-primary" id="btnCalculate" type="button" onclick="btnCalculate_click()" >
+                    Calculate
+            </button>
+        </form>
+    </div>
+    <table class="table table-bordered table-md table-light table-hover p-5" id="output"></table>
+    <div align="center" id="totals"></div>
+   
+</body>
+</html>
